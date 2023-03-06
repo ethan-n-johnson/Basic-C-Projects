@@ -109,6 +109,5 @@ int main(void)
 
     default:
         printf("Not sure how we got here.");
-        break;
     }
 }
