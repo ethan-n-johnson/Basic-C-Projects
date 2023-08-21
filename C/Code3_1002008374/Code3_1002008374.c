@@ -5,15 +5,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(void)
+
+int RandomNumber()
 {
-    int choice = 0;
     int MyRandomNumber = 0;
     srand(time(0));
      
     MyRandomNumber = rand() % 20; 
     MyRandomNumber++;
+    return MyRandomNumber;
+}
 
+void MenuPrompt()
+{
+    int choice = 0;
     printf("Pick one of the following questions \n\n");
     printf("1.    Will I trip and fall today?\n");
     printf("2.    Will it be sunny tommorow?\n");
@@ -32,6 +37,12 @@ int main(void)
         scanf("%d", &choice);
         printf("\n");
     }
+}
+
+int main(void)
+{
+    int MyRandomNumber = RandomNumber();
+    MenuPrompt();
 
     switch (MyRandomNumber)
     {
