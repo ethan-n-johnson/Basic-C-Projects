@@ -1,2 +1,2 @@
-# Basic-C-Projects
-Various basic C projects from my introductory C course.
+# Basic-C/C#-Projects
+Various basic C and C# projects from my first two coding courses
